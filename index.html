@@ -1,1 +1,45 @@
-<!-- hi  -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+</head>
+
+
+<body>
+
+Hi!
+
+<!-- send s request get the number from the api -->
+<!-- display it -->
+<!-- add one -->
+<!-- post the new value back to the ai -->
+
+<h2 id="visitor"></h2>
+
+
+<script>
+
+    let response = fetch('https://0fhi1osp1d.execute-api.us-east-1.amazonaws.com/count/counter')
+    // document.getElementById("visitor").innerHTML = response.json()
+    
+    response.then(res =>
+        res.json()).then(d => {
+            document.getElementById("visitor").innerHTML = d
+        })
+
+
+
+</script>
+
+
+
+</body>
+
+lol
+
+
+</html>
